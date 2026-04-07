@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="icon" sizes="32x32" href="/logo.png" />
+  <link rel="icon" sizes="16x16" href="/logo.png" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            'ig-blue': '#405DE6',
+            'ig-purple': '#833AB4',
+            'ig-pink': '#E1306C',
+            'ig-orange': '#FF00C3',
+            'ig-yellow': '#277FEA',
+            'ig-dark': '#262626',
+            'ig-light': '#FFFFFF',
+          },
+          backgroundImage: {
+            'instagram': 'linear-gradient(90deg, #405DE6, #833AB4, #E1306C, #FF00C3, #277FEA)',
+          },
+          borderRadius: {
+            'pill': '999px',
+            'large': '20px',
+          },
+          boxShadow: {
+            'soft': '0 2px 12px rgba(0,0,0,0.08)',
+            'hover': '0 6px 20px rgba(0,0,0,0.2)',
+            'glow': '0 0 12px #E1306C',
+            'glow-hover': '0 0 24px #FF00C3',
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --ig-blue: #405DE6;
+      --ig-purple: #833AB4;
+      --ig-pink: #E1306C;
+      --ig-orange: #FF00C3;
+      --ig-yellow: #277FEA;
+      --ig-dark: #262626;
+      --ig-light: #FFFFFF;
+      --main-gradient: linear-gradient(90deg, #405DE6, #833AB4, #E1306C, #FF00C3, #277FEA);
+    }
+
+    body {
+      background-color: var(--ig-light);
+      color: var(--ig-dark);
+      overflow-x: hidden;
+    }
+
+    /* Scrollbar Styling */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #405DE6, #E1306C);
+      border-radius: 5px;
+    }
+
+    .text-gradient {
+      background: var(--main-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .bg-gradient-main {
+      background: var(--main-gradient);
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
