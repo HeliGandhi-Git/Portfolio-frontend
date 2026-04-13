@@ -42,7 +42,11 @@ const Navbar: React.FC = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-soft py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <a href="#hero" className="flex items-center gap-3 text-2xl font-bold tracking-tight">
+        <a
+          href="#hero"
+          onClick={(e) => { e.preventDefault(); handleNavClick('#hero'); }}
+          className="flex items-center gap-3 text-2xl font-bold tracking-tight"
+        >
           <img src="/logo.png" alt="Logo" className="h-16 w-16 object-contain" />
           <span className="text-gradient">Heli's Portfolio</span>
         </a>

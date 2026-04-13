@@ -89,6 +89,10 @@ const Hero: React.FC = () => {
           <div className="flex flex-wrap gap-4 mt-4">
             <a
               href="#projects"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="px-8 py-4 rounded-full bg-instagram text-white font-semibold shadow-glow hover:shadow-glow-hover hover:-translate-y-1 transition-all duration-300 flex items-center gap-2"
             >
               View Projects <ArrowRight size={20} />

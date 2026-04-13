@@ -12,6 +12,7 @@ import { fairyDustCursor } from './utils/fairyDustCursor';
 
 const App: React.FC = () => {
   useEffect(() => {
+    document.title = "Heli's Portfolio";
     const cursor = fairyDustCursor();
     return () => {
       cursor.destroy();
