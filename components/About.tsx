@@ -32,7 +32,13 @@ const About: React.FC = () => {
 
         {/* Button */}
         <div className="mt-6">
-          <a href="#contact">
+          <a
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             <button className="text-ig-purple font-semibold border-b-2 border-ig-purple pb-1 hover:text-ig-pink hover:border-ig-pink transition-all duration-300">
               Contact Me
             </button>

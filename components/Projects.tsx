@@ -91,7 +91,7 @@ const Projects: React.FC = () => {
           {projects.map((project) => (
             <div
               key={project._id}
-              className="group bg-white rounded-large overflow-hidden border border-transparent hover:border-ig-pink/50 hover:shadow-glow-hover transition-all duration-300 hover:-translate-y-2 shadow-soft relative"
+              className="group bg-white rounded-large overflow-hidden border border-transparent hover:border-ig-pink hover:shadow-glow-hover transition-all duration-300 hover:-translate-y-2 shadow-soft relative"
             >
               {/* Image Container */}
               <div className="relative h-64 overflow-hidden">
